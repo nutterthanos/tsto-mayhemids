@@ -7,8 +7,8 @@ from aiohttp import ClientResponseError, ClientPayloadError, ClientConnectorErro
 from xml.etree import ElementTree as ET
 
 # Define the range for applicationUserId
-START_ID = 1400000
-END_ID = 1500000
+START_ID = 1500000
+END_ID = 1600000
 
 # Maximum concurrent requests and retries
 MAX_CONCURRENT_REQUESTS = 5000
