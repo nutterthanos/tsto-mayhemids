@@ -1,10 +1,7 @@
-# .github/workflows/run_on_push.yml
-name: Run Script on Push
+# .github/workflows/main.yml
+name: Run Script
 
 on:
-  push:
-    branches:
-      - main  # Specify the branch to watch for pushes
   workflow_dispatch:
 
 jobs:
@@ -44,3 +41,11 @@ jobs:
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Trigger workflow on main branch
+        run: |
+          curl -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/main.yml/dispatches \
+            -d '{"ref":"main"}'
