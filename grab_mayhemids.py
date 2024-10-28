@@ -11,8 +11,8 @@ START_ID = 70000000
 END_ID = 71000000
 
 # Maximum concurrent requests and retries
-MAX_CONCURRENT_REQUESTS = 5000
-MAX_RETRIES = 3
+MAX_CONCURRENT_REQUESTS = 25000
+MAX_RETRIES = 1000
 TIMEOUT = 10  # Timeout in seconds for each request
 GLOBAL_TIMEOUT = 30  # Global timeout for each task to ensure no task runs forever
 
