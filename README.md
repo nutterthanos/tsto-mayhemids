@@ -6,3 +6,5 @@ or run the grab_mayhemids.py script on your computer with an range of applicatio
 
 the script saves the found mayhem id's under applicationUserId_{applicationUserId}_mayhemId_{MayhemId}.xml in the current folder
 so you could get the mayhem id from the filename or you can get it after the /users path in the files
+
+note the script does dump the mayhemid from the server response into an file under applicationuserid_*_mayhemid_*.XML so in case you use the script you might want to delete the files afterwards or something 
