@@ -8,7 +8,7 @@ from xml.etree import ElementTree as ET
 
 # Define the range for applicationUserId
 START_ID = 255000000
-END_ID = 256000000
+END_ID = 260000000
 
 # Maximum concurrent requests and retries
 MAX_CONCURRENT_REQUESTS = 25000
